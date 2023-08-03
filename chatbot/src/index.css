@@ -1,0 +1,108 @@
+body {
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* .chat-container {
+  display: flex;
+  flex-direction: column;
+} */
+.chat-container {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto; 
+}
+
+/* Estilos de la barra de desplazamiento */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #1565c0; /* Color de la barra de desplazamiento */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background-color: #0d47a1; /* Color de la barra de desplazamiento al pasar el mouse */
+}
+.chat-bubble {
+  margin-top: 1.5rem;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.user-bubble {
+  background-color: #1565c0; 
+  color: #ffffff; 
+  align-self: flex-start;
+  margin-bottom: 10px;
+  position: relative; 
+}
+.user-bubble:before {
+  content: "You:"; 
+  position: absolute; 
+  top: -30px; 
+  left: 0px; 
+  background-color: #1565c0; 
+  color: #ffffff; 
+  border-radius: 4px; 
+  padding: 4px 8px; 
+}
+.assistant-bubble {
+  background-color: #424242; 
+  color: #ffffff; 
+  align-self: flex-end; 
+  margin-bottom: 10px;
+  position: relative; 
+}
+.assistant-bubble:before {
+  content: "ChatGPT:"; 
+  position: absolute; 
+  top: -30px; 
+  right: 0px; 
+  background-color: #424242; 
+  color: #ffffff; 
+  border-radius: 4px; 
+  padding: 4px 8px; 
+}
+
+.typing-indicator {
+  font-style: italic;
+}
+
+.chat-input {
+  background-color: #212121; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.chat-button {
+  background-color: #1565c0; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
